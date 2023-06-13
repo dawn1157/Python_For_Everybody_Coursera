@@ -10,7 +10,7 @@ for line in handle:
         raw = line.split(":")
         words = raw[0]
         hour = words[-2:]
-        if hout == int:
+        if hour == int:
             continue
         d[hour] = d.get(hour,0) + 1
 
