@@ -8,16 +8,16 @@ d = dict()
 for line in handle:
     if line.startswith("From"):
         raw = line.split(":")
-        hey = raw[0]
-        ray = hey[-2:]
-        if ray == int:
+        words = raw[0]
+        hour = words[-2:]
+        if hout == int:
             continue
-        d[ray] = d.get(ray,0) + 1
+        d[hour] = d.get(hour,0) + 1
 
 lst = list()
 for key,val in d.items():
-    way = (key,val)
-    lst.append(way)
+    combo = (key,val)
+    lst.append(combo)
 
 lst = sorted(lst)
 
